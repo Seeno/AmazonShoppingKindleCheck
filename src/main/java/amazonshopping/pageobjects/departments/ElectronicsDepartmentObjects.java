@@ -27,9 +27,9 @@ public class ElectronicsDepartmentObjects extends BaseDriver {
 
 	}
 
+	//Checks for kindle
 	@AndroidFindBy(xpath="//android.view.View[@text='Kindle']")
 	private MobileElement kindleOption;
-
 
 	@AndroidFindBy(xpath = "//android.view.View[@text='Electronics and Accessories']")
 	private MobileElement departmentHeader;
