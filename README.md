@@ -1,0 +1,2 @@
+# AmazonShoppingKindleCheck
+Automation assignment
