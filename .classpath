@@ -23,14 +23,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Jimmy/Downloads/New folder/byte-buddy-1.8.15.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jimmy/Downloads/New folder/commons-exec-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jimmy/Downloads/New folder/guava-25.0-jre.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jimmy/Downloads/New folder/okhttp-3.11.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jimmy/Downloads/New folder/okio-1.14.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jimmy/Downloads/client-combined-3.141.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jimmy/Downloads/java-client-6.1.0.jar" sourcepath=""/>
-	<classpathentry kind="lib" path="C:/Users/Jimmy/Downloads/client-combined-3.141.5-sources.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

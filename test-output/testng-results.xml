@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="52436" started-at="2018-11-12T19:53:33Z" finished-at="2018-11-12T19:54:26Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="52436" started-at="2018-11-12T19:53:33Z" finished-at="2018-11-12T19:54:26Z">
-      <class name="amazonshopping.checkkindle.AppTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:amazonshopping.checkkindle.AppTest@51565ec2]" name="beforeTest" is-config="true" duration-ms="10079" started-at="2018-11-12T19:53:33Z" finished-at="2018-11-12T19:53:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="checkIfKindleInStock()[pri:0, instance:amazonshopping.checkkindle.AppTest@51565ec2]" name="checkIfKindleInStock" duration-ms="41144" started-at="2018-11-12T19:53:43Z" finished-at="2018-11-12T19:54:25Z">
-          <exception class="java.lang.AssertionError">
-            <message>
+<testng-results skipped="0" failed="1" ignored="0"
+	total="1" passed="0">
+	<reporter-output>
+	</reporter-output>
+	<suite name="Default suite" duration-ms="52436"
+		started-at="2018-11-12T19:53:33Z" finished-at="2018-11-12T19:54:26Z">
+		<groups>
+		</groups>
+		<test name="Default test" duration-ms="52436"
+			started-at="2018-11-12T19:53:33Z" finished-at="2018-11-12T19:54:26Z">
+			<class name="amazonshopping.checkkindle.AppTest">
+				<test-method status="PASS"
+					signature="beforeTest()[pri:0, instance:amazonshopping.checkkindle.AppTest@51565ec2]"
+					name="beforeTest" is-config="true" duration-ms="10079"
+					started-at="2018-11-12T19:53:33Z"
+					finished-at="2018-11-12T19:53:43Z">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- beforeTest -->
+				<test-method status="FAIL"
+					signature="checkIfKindleInStock()[pri:0, instance:amazonshopping.checkkindle.AppTest@51565ec2]"
+					name="checkIfKindleInStock" duration-ms="41144"
+					started-at="2018-11-12T19:53:43Z"
+					finished-at="2018-11-12T19:54:25Z">
+					<exception class="java.lang.AssertionError">
+						<message>
               <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
+						</message>
+						<full-stacktrace>
               <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
@@ -49,16 +60,20 @@ at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkIfKindleInStock -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:amazonshopping.checkkindle.AppTest@51565ec2]" name="tearDown" is-config="true" duration-ms="1199" started-at="2018-11-12T19:54:25Z" finished-at="2018-11-12T19:54:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- amazonshopping.checkkindle.AppTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+						</full-stacktrace>
+					</exception> <!-- java.lang.AssertionError -->
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- checkIfKindleInStock -->
+				<test-method status="PASS"
+					signature="tearDown()[pri:0, instance:amazonshopping.checkkindle.AppTest@51565ec2]"
+					name="tearDown" is-config="true" duration-ms="1199"
+					started-at="2018-11-12T19:54:25Z"
+					finished-at="2018-11-12T19:54:26Z">
+					<reporter-output>
+					</reporter-output>
+				</test-method> <!-- tearDown -->
+			</class> <!-- amazonshopping.checkkindle.AppTest -->
+		</test> <!-- Default test -->
+	</suite> <!-- Default suite -->
 </testng-results>
