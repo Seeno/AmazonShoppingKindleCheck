@@ -20,5 +20,10 @@ public class KindleProductPage {
 	public boolean isKindleOutOfStock() {
 		return kindleProductObjects.isKindleOutOfStock();
 	}
+	
+	public void tapOnAmazonLogo()
+	{
+		kindleProductObjects.tapLogo();
+	}
 
 }

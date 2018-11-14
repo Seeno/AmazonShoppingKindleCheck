@@ -14,6 +14,8 @@ import amazonshopping.pages.menu.MainMenuPage;
 import amazonshopping.pages.product.KindleProductPage;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -34,7 +36,7 @@ public class AppTest
 	private ElectronicsDepartmentPage elecDepartPage;
 	private KindleProductPage kindleProductPage;
 	
-	@BeforeMethod
+	@BeforeClass
 	public void beforeTest() throws MalformedURLException
 	{
 		driver = BaseDriver.capabilities();
@@ -49,7 +51,7 @@ public class AppTest
 	
 	/*
 	 * Description: Checks to see if the kindle is in stock. 
-	 * Requirement: "In Stock." text is displayed
+	 * Requirement: "Add to Cart" button is displayed
 	 */
 	@Test
     public void checkIfKindleInStock() throws MalformedURLException
@@ -63,7 +65,15 @@ public class AppTest
     		fail("Kindle is not in stock");
     	}
     }
+
+	//Return to the home page
+	@AfterMethod
+	public void afterMethod()
+	{
+		kindleProductPage.tapOnAmazonLogo();
+	}
 	
+	//Terminate the app
 	@AfterClass
 	public void tearDown()
 	{

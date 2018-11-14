@@ -23,6 +23,10 @@ public class KindleProductObjects extends BaseDriver {
 		super(driver);
 		action = new TouchAction(driver);
 	}
+	
+	//Amazon logo on top
+	@AndroidFindBy(id="com.amazon.mShop.android.shopping:id/action_bar_home_logo")
+	private MobileElement amazonLogo;
 
 	// Identifier to see if item is in stock using Add to Cart button. 
 	@AndroidFindBy(uiAutomator = "new UiScrollable(new UiSelector()).scrollIntoView(resourceId(\"add-to-cart-button\"));")
@@ -57,6 +61,12 @@ public class KindleProductObjects extends BaseDriver {
 			//did not find the text to signify it is out of stock. 
 			return false;
 		}
+	}
+	
+	//Taps amazon logo
+	public void tapLogo()
+	{
+		clickElement(amazonLogo);
 	}
 
 
