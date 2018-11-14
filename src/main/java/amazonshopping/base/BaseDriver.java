@@ -31,6 +31,7 @@ public class BaseDriver {
 		wait = new WebDriverWait(driver, 30);
 	}
 
+	//Grabs the APK from src folder and installs amazon shopping app if it is not installed
 	public static MobileDriver<MobileElement> capabilities() throws MalformedURLException {
 		File appDir = new File("src");
 		File app = new File(appDir, "AmazonShopping.apk");
