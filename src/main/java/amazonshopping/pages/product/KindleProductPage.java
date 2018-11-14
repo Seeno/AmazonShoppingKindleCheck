@@ -18,7 +18,6 @@ public class KindleProductPage {
 	}
 
 	public boolean isKindleOutOfStock() {
-		// TODO Auto-generated method stub
 		return kindleProductObjects.isKindleOutOfStock();
 	}
 

@@ -47,6 +47,12 @@
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.5</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-api</artifactId>
+			<version>3.141.5</version>
+		</dependency>
 	</dependencies>
 
 

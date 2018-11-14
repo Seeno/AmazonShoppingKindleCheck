@@ -1,6 +1,7 @@
 package amazonshopping.checkkindle;
 
 import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.fail;
 
 import java.net.MalformedURLException;
 
@@ -46,7 +47,10 @@ public class AppTest
 
 	}
 	
-
+	/*
+	 * Description: Checks to see if the kindle is in stock. 
+	 * Requirement: "In Stock." text is displayed
+	 */
 	@Test
     public void checkIfKindleInStock() throws MalformedURLException
     {
@@ -54,8 +58,10 @@ public class AppTest
     	homePage.clickMenu();
     	departmentMenuPage.goToElectronicsDepartment();
     	elecDepartPage.tapOnKindle();
-    	assertTrue(kindleProductPage.isKindleInStock());
-
+    	if (!kindleProductPage.isKindleInStock())
+    	{
+    		fail("Kindle is not in stock");
+    	}
     }
 	
 	@AfterClass

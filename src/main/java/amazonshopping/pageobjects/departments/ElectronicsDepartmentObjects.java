@@ -34,6 +34,10 @@ public class ElectronicsDepartmentObjects extends BaseDriver {
 
 	@AndroidFindBy(xpath = "//android.view.View[@text='Deals']")
 	private MobileElement deals;
+	
+	@AndroidFindBy(xpath = "//android.view.View[@text='Fire TV & Tablets']")
+	private MobileElement fireTV;
+
 
 	
 	/* For some reason on the department page, all views are visible even through they are not shown on the screen. 
